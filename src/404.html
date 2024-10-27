@@ -1,0 +1,39 @@
+---
+layout: default
+title: Москитные сетки | На Паузе
+---
+
+<body>
+    <style>
+        body {
+            height: 200vh; /* Делаем страницу длинной для скролла */
+            margin: 0;
+            overflow: hidden; /* Скрываем стандартный скролл */
+        }
+        .scroll-container {
+            height: 100vh; /* Высота контейнера */
+            overflow: auto; /* Включаем скролл для контейнера */
+            transition: transform 0.5s ease; /* Анимация для прокрутки */
+        }
+    </style>
+    <div class="scroll-container">
+        <!-- Контент здесь -->
+        <h1>Прокрутка с использованием CSS Transition</h1>
+        <p>Прокручивайте вниз и вверх!</p>
+        <!-- Добавьте много контента, чтобы прокрутка была заметна -->
+        <div style="height: 200vh;"></div>
+    </div>
+
+    <script>
+        const scrollContainer = document.querySelector('.scroll-container');
+        let targetScrollTop = 0;
+
+        window.addEventListener('wheel', function (event) {
+            event.preventDefault(); // Отключаем стандартное поведение прокрутки
+            targetScrollTop += event.deltaY; // Изменяем целевую позицию
+
+            // Обновляем позицию контейнера
+            scrollContainer.style.transform = `translateY(-${targetScrollTop}px)`;
+        });
+    </script>
+</body>
