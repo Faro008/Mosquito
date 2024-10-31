@@ -848,6 +848,12 @@ h6 {
     grid-row: 5;
 }
 
+@media (max-width: 480px) {
+    .container__GridFooter div:nth-child(n+2) {
+        display: none;
+    }
+}
+
 .__column {
     -ms-flex-direction: column;
     flex-direction: column;
