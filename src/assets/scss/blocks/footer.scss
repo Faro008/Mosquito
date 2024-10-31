@@ -96,3 +96,8 @@
     grid-column: 2;
     grid-row: 5;
 }
+@media (max-width: 480px){
+    .container__GridFooter div:nth-child(n+2){
+        display: none;
+    }
+}

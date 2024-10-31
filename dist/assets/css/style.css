@@ -76,13 +76,13 @@ a {
 
 /* Track */
 ::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 15px rgb(239, 143, 8);
+    box-shadow: inset 0 0 15px rgb(221.85, 221.85, 221.85);
     border-radius: 10px;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: red;
+    background: #262526;
     border-radius: 10px;
 }
 
@@ -194,6 +194,15 @@ a {
     display: flex;
     -ms-flex-pack: center;
     justify-content: center;
+    position: relative;
+}
+
+.logo a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 .ul__grid {
@@ -1366,11 +1375,59 @@ h6 {
         padding-right: 15%;
     }
 }
+
+.content__error {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/background__404__012.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    -ms-flex-line-pack: center;
+    align-content: center;
+}
+
+.button__error {
+    grid-column: 2;
+    position: relative;
+    width: auto;
+    height: auto;
+}
+
+.buttonError {
+    border: 1px solid #333;
+    padding: 5px;
+    border-radius: 25px;
+    margin: 0 10px;
+    box-shadow: -5px 5px 10px #1C1A1A inset;
+}
+
+.button__error svg {
+    z-index: 10;
+}
+
+.button__error a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 25;
+}
+
+.buttonError::after {
+    display: none;
+}
+
+.buttonError::before {
+    display: none;
+}
+
 /*@import "blocks/fontsavecome";
 @import "blocks/banner";
 @import "blocks/section";
 @import "blocks/tel";
-@import "blocks/404";
 @import "blocks/calculator";
 @import "blocks/form";
 

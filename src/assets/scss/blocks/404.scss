@@ -1,0 +1,41 @@
+@import "function";
+.content__error{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/background__404__012.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    align-content: center;
+}
+.button__error{
+    grid-column: 2;
+    position: relative;
+    width: auto;
+    height: auto;
+}
+.buttonError{
+    border: 1px solid #333;
+    padding: 5px;
+    border-radius: 25px;
+    margin: 0 10px;
+    box-shadow: -5px 5px 10px #1C1A1A inset;
+}
+.button__error svg{
+    z-index: 10;
+}
+.button__error a{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 25;
+}
+.buttonError::after{
+    display: none;
+}
+.buttonError::before{
+    display: none;
+}

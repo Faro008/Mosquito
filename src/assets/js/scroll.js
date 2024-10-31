@@ -1,4 +1,4 @@
-/*const aLinks = document.querySelectorAll('[data-link]');
+const aLinks = document.querySelectorAll('[data-link]');
 
 aLinks.forEach (tabLinks);
 function tabLinks(item) {

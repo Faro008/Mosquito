@@ -1,12 +1,12 @@
-let inertia = 0;
+/*let inertia = 0;
 let scrollElement = document.scrollingElement || document.documentElement;
 /*const scrollSpeed = 2500; // Задаем фиксированную скорость скролла*/
 
-window.addEventListener('wheel', function(e) {
+/*window.addEventListener('wheel', function(e) {
     e.preventDefault(); // Предотвращаем стандартное поведение
 
     /*inertia += (e.deltaY > 0 ? scrollSpeed : -scrollSpeed); // Скролл вверх или вниз*/
-    inertia += e.deltaY * 20; // Умножаем на коэффициент для настройки скорости
+   /*inertia += e.deltaY * 20; // Умножаем на коэффициент для настройки скорости
     console.log(inertia);
     let scroll = function() {
         // Получаем максимальное значение прокрутки
@@ -33,4 +33,4 @@ window.addEventListener('wheel', function(e) {
     };
 
     scroll();
-}, { passive: false });
+}, { passive: false });*/
